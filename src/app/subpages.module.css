@@ -1,0 +1,270 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.productTile,
+.detailGrid article,
+.faqStack article {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.productTile {
+  display: grid;
+  min-height: 260px;
+  padding: 28px;
+}
+
+.productTile h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  line-height: 1.08;
+}
+
+.productTile p,
+.detailGrid p,
+.detailGrid li,
+.faqStack p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.productTile span {
+  align-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.productHero {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #101114, #262a32);
+  color: #fff;
+}
+
+.productHeroGrid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 42px;
+}
+
+.productHero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.7rem, 6vw, 5.2rem);
+  line-height: 0.98;
+}
+
+.productHero p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+}
+
+.productHero img {
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.detailGrid article {
+  padding: 30px;
+}
+
+.detailGrid h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.detailGrid ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.specs {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.specs div {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.specs dt {
+  font-weight: 900;
+}
+
+.specs dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 32px;
+}
+
+.tag {
+  display: inline-flex;
+  margin: 0 8px 10px 0;
+  padding: 10px 13px;
+  border-radius: 999px;
+  background: #f3f6fb;
+  color: #26313d;
+  font-weight: 800;
+}
+
+.faqStack {
+  display: grid;
+  gap: 14px;
+}
+
+.faqStack article {
+  padding: 22px;
+}
+
+.faqStack h3 {
+  margin: 0 0 8px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: 24px;
+}
+
+.contactPanel {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top right, rgba(247, 198, 0, 0.16), transparent 34%),
+    #fff;
+  box-shadow: var(--shadow);
+}
+
+.contactPanel h2 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
+.contactPanel p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.contactCards {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.contactCards div {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.contactCards span,
+.contactCards small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.contactCards strong {
+  display: block;
+  margin: 4px 0;
+  line-height: 1.45;
+}
+
+.mapSection {
+  padding: 88px 0;
+  background: var(--soft);
+}
+
+.mapCard {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.mapCard iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: 0;
+  filter: saturate(1.06) contrast(1.02);
+}
+
+.mapInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.mapInfo span {
+  display: block;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mapInfo strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.25rem;
+}
+
+.mapInfo p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 880px) {
+  .cardGrid,
+  .productHeroGrid,
+  .detailGrid,
+  .twoColumn,
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mapInfo {
+    display: block;
+  }
+
+  .mapInfo a {
+    margin-top: 18px;
+  }
+
+  .mapCard iframe {
+    height: 360px;
+  }
+}
