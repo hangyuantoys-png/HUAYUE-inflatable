@@ -62,7 +62,7 @@ export const company = {
     embedUrl:
       "https://www.openstreetmap.org/export/embed.html?bbox=113.1754%2C23.3318%2C113.1954%2C23.3518&layer=mapnik&marker=23.3417978%2C113.1854169"
   },
-  siteUrl: "https://hyskyfar.com"
+  siteUrl: "https://www.hyskyfar.com"
 };
 
 export const navItems = [
